@@ -26,12 +26,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "blue-eye-docs" # /docsy-jekyll the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://vsoch.github.io" # the base hostname & protocol for your site
+url: "https://abodehq.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
-#repo: "https://github.com/vsoch/docsy-jekyll"
-#github_user: "vsoch"
-#github_repo: "docsy-jekyll"
 repo: "https://github.com/abodehq/blue-eye"
 github_user: "abodehq"
 github_repo: "blue-eye"

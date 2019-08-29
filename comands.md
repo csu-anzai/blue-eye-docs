@@ -18,3 +18,12 @@ gem install eventmachine --platform ruby
 
 live watch
 jekyll serve --livereload
+
+hosting to github pages
+git remote rm origin
+git init
+git checkout -b gh-pages
+git add .
+git commit -m "test init pages"
+git remote add origin https://github.com/abodehq/blue-eye-docs.git
+git push origin gh-pages
