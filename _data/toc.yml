@@ -10,10 +10,12 @@
           url: "docs/getting-started#development"
         - title: Customization
           url: "docs/getting-started#customization"
-    - title: "Extras"
+    - title: "Core Components"
       url: "docs/extras"
       children:
-        - title: Quizzes
+        - title: Button
+          url: "docs/components/core/button"
+        - title: Quizzes1
           url: "docs/extras/example-quiz"
     - title: "About"
       url: "about"
