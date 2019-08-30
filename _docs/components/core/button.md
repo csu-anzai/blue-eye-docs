@@ -23,7 +23,7 @@ import Button from "be-button";
 </Button>
 ```
 
-![Kiku](../../../assets/img/logo.png)
+<img src="https://i.imgur.com/eDTf1Wn.jpg" alt="Basic" style="width:150px" />
 
 > Outline :
 
@@ -35,7 +35,7 @@ import Button from "be-button";
 </Button>
 ```
 
-![Kiku](../../../assets/img/logo.png)
+<img src="https://i.imgur.com/hDVY5m3.jpg" alt="Basic" style="width:150px" />
 
 > advance :
 
@@ -58,7 +58,7 @@ import Button from "be-button";
 </Button>
 ```
 
-![Kiku](../../../assets/img/logo.png)
+<img src="https://i.imgur.com/CoGNUtO.jpg" alt="Basic" style="width:150px" />
 
 > loading :
 
@@ -78,7 +78,7 @@ import Button from "be-button";
 />
 ```
 
-![Kiku](../../../assets/img/logo.png)
+<img src="https://i.imgur.com/oBKCU3r.jpg" alt="Basic" style="width:150px" />
 
 ### Props
 
