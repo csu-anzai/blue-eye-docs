@@ -122,19 +122,19 @@ import { Image } from "react-native";
 
 ### Props
 
-- [`accessibilityLabel`](button.md#accessibilitylabel)
-- [`color`](button.md#color)
-- [`disabled`](button.md#disabled)
-- [`hasTVPreferredFocus`](button.md#hastvpreferredfocus)
-- [`nextFocusDown`](button.md#nextfocusdown)
-- [`nextFocusForward`](button.md#nextfocusForward)
-- [`nextFocusLeft`](button.md#nextfocusleft)
-- [`nextFocusRight`](button.md#nextfocusright)
-- [`nextFocusUp`](button.md#nextfocusleft)
 - [`onPress`](button#onpress)
-- [`testID`](button.md#testid)
-- [`title`](button.md#title)
-- [`touchSoundDisabled`](button.md#touchSoundDisabled)
+- [`color`](button#color)
+- [`textColor`](button#textcolor)
+- [`borderColor`](button#bordercolor)
+- [`borderWidth`](button#borderwidth)
+- [`radius`](button#radius)
+- [`disabled`](button#disabled)
+- [`shadow`](button#shadow)
+- [`outline`](button#outline)
+- [`opacity`](button#opacity)
+- [`loading`](button#loading)
+- [`loadingColor`](button#loadingcolor)
+- [`loadingSize`](button#loadingsize)
 
 ---
 
@@ -154,35 +154,92 @@ Background color of the button
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | Yes      | primary |
+| [be-color](../../guides/color-reference) | No       | primary |
 
-### `hi`
+### `textColor`
 
-Handler to be called when the user taps the button
+Text color of the button ( only if the children is string)
 
-| Type     | Required |
-| -------- | -------- |
-| function | Yes      |
+| Type                                     | Required | Default                                        |
+| ---------------------------------------- | -------- | ---------------------------------------------- |
+| [be-color](../../guides/color-reference) | No       | white in default case, primary in outline mode |
 
----
+### `borderColor`
 
-|             Prop              |     Type     |      Default       |                                             Description                                              |
-| :---------------------------: | :----------: | :----------------: | :--------------------------------------------------------------------------------------------------: |
-| ...TouchableOpacity.propTypes |              |                    |                                                                                                      |
-|          capitalize           |     bool     |       false        |                          Transforms the first character in a capital letter                          |
-|             color             |    string    |     'primary'      | your options are: 'primary', 'theme', 'error', 'warning', 'succes', 'transparent' or your own color  |
-|           disabled            |     bool     |       false        |                                         Disables the button                                          |
-|             icon              | bool, string |       false        |                            pick whatever icon you want from Expo's icons                             |
-|           iconColor           | bool, string | theme.COLORS.BLACK |                                        sets the icon's color                                         |
-|          iconFamily           | bool, string |       false        |                 pick whatever icon family suits the icon you chose from Expo's icons                 |
-|           iconSize            |    number    |         14         |                                         sets the icon's size                                         |
-|            loading            |     bool     |       false        |                        Uses the <ActivityIndicator /> for the loading effect                         |
-|          loadingSize          |    string    |      'small'       |                                  your options are: 'small', 'large'                                  |
-|           lowercase           |     bool     |       false        |                                     makes all letters lowercase                                      |
-|           onlyIcon            |     bool     |       false        |                     adds specific styling for using only an icon in your button                      |
-|            opacity            |    number    |        0.8         |                                     changes the button's opacity                                     |
-|            radius             |    number    |         0          |                                     changes the button's radius                                      |
-|          shadowColor          | bool, string |       false        | the default shadowColor is based on the button's color but you can also write a specific shadowColor |
-|          shadowless           |     bool     |       false        |                                            removes shadow                                            |
-|             size              |    number    |      'large'       |                                  your options are: 'large', 'small'                                  |
-|           uppercase           |     bool     |       false        |                                     makes all letters uppercase                                      |
+border color of the button , will active if the borderWidth prop great than 0 or the button outline prop set to true
+
+| Type                                     | Required | Default |
+| ---------------------------------------- | -------- | ------- |
+| [be-color](../../guides/color-reference) | No       | primary |
+
+### `borderWidth`
+
+border width of the button you can change border style using containerStyle prop
+
+| Type   | Required | Default                    |
+| ------ | -------- | -------------------------- |
+| Number | No       | BETheme.SIZES.BORDER_WIDTH |
+
+### `radius`
+
+Button border radius of the button to make it circle you need to set width = height & radius = button width / 2
+
+| Type   | Required | Default                     |
+| ------ | -------- | --------------------------- |
+| Number | No       | BETheme.SIZES.BORDER_RADIUS |
+
+### `disabled`
+
+If true, disable all interactions for this component.
+
+| Type | Required | Default |
+| ---- | -------- | ------- |
+| bool | No       | false   |
+
+### `shadow`
+
+If true, show shadow effect for this component.
+
+| Type | Required | Default |
+| ---- | -------- | ------- |
+| bool | No       | false   |
+
+### `outline`
+
+If true make an outline button,by set the default text color to primary set background color to transparent and finally set border width to 1, you can ovveride these styles.
+
+| Type | Required | Default |
+| ---- | -------- | ------- |
+| bool | No       | false   |
+
+### `opacity`
+
+Determines what the opacity of the Button should be when touch is active.
+
+| Type   | Required | Default               |
+| ------ | -------- | --------------------- |
+| Number | No       | BETheme.SIZES.OPACITY |
+
+### `loading`
+
+If true we show react native activity indicator instead of the button content.
+
+| Type | Required | Default |
+| ---- | -------- | ------- |
+| bool | No       | false   |
+
+### `loadingColor`
+
+set Loading indicator color , will active if loading prop set to true
+
+| Type                                     | Required | Default |
+| ---------------------------------------- | -------- | ------- |
+| [be-color](../../guides/color-reference) | No       | primary |
+
+### `loadingSize`
+
+Size of the indicator (default is 'small'). Passing a number to the size prop is only supported on Android.
+
+| Type                          | Required | Default |
+| ----------------------------- | -------- | ------- |
+| enum('small', 'large'),number | No       | small   |
