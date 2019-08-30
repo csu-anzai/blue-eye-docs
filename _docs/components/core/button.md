@@ -120,11 +120,46 @@ import { Image } from "react-native";
 
 <img src="https://i.imgur.com/CPxohym.jpg" alt="Basic" style="width:150px" />
 
+> TouchableHighlight :
+
+```jsx
+import Button from "be-button";
+import { Image } from "react-native";
+---
+<Button
+    type="TouchableHighlight"
+    opacity={1}
+    onShowUnderlay={() =>
+    <Image style={ { width: 50, height: 50 } } source={ { uri: "https://i.imgur.com/dNSN9D7.png" } } />}
+    underlayStyle={ { width: 105, height: 105 } }
+    containerStyle={ { width: 100, height: 100 } }
+    borderColor="#ff9900"
+    underlayColor="success"
+    borderWidth={1}
+    onPress={() => console.log("Button Pressed")}
+    >
+    <Image style={ { width: 50, height: 50 } } source={ { uri: "https://i.imgur.com/LgkZkOG.png" } } />
+</Button>
+```
+
+<table  style="border: none !important;">
+<tr><td style="width:200px">Unpressed </td><td>Pressed</td></tr>
+<tr><td>
+<img src="https://i.imgur.com/FaNgc3z.jpg" alt="Basic" style="width:100px" />
+</td><td>
+<img src="https://i.imgur.com/42ECqBb.jpg" alt="Basic" style="width:100px" />
+</td></tr>
+</table>
+
 ### Props
 
 - [`onPress`](button#onpress)
+- [`type`](button#type)
+- [`containerStyle`](button#containerstyle)
 - [`color`](button#color)
 - [`textColor`](button#textcolor)
+- [`textTransform`](button#texttransform)
+- [`textStyle`](button#textstyle)
 - [`borderColor`](button#bordercolor)
 - [`borderWidth`](button#borderwidth)
 - [`radius`](button#radius)
@@ -135,6 +170,8 @@ import { Image } from "react-native";
 - [`loading`](button#loading)
 - [`loadingColor`](button#loadingcolor)
 - [`loadingSize`](button#loadingsize)
+- [`underlayColor`](button#underlaycolor)
+- [`underlayStyle`](button#underlaystyle)
 
 ---
 
@@ -147,6 +184,23 @@ Handler to be called when the user taps the button
 | Type     | Required |
 | -------- | -------- |
 | function | Yes      |
+
+### `type`
+
+**TouchableOpacity** selected by default, so when press Button down, the opacity of the wrapped view is decreased, dimming it.
+if you want to change the background color or even the entire component when you press the button down then you need to change the type to **TouchableHighlight**
+
+| Type                                | Required | Default          |
+| ----------------------------------- | -------- | ---------------- |
+| TouchableOpacity,TouchableHighlight | No       | TouchableOpacity |
+
+### `containerStyle`
+
+override button container style for example if you want to change width,height,padding,....
+
+| Type  | Required |
+| ----- | -------- |
+| style | No       |
 
 ### `color`
 
@@ -163,6 +217,22 @@ Text color of the button ( only if the children is string)
 | Type                                     | Required | Default                                        |
 | ---------------------------------------- | -------- | ---------------------------------------------- |
 | [be-color](../../guides/color-reference) | No       | white in default case, primary in outline mode |
+
+### `textTransform`
+
+set Text Transform ( only if the children is string)
+
+| Type                                  | Required | Default |
+| ------------------------------------- | -------- | ------- |
+| 'lowercase', 'uppercase','capitalize' | No       | Not Set |
+
+### `textStyle`
+
+override button text style for example if you want to change fontSize,... ( only if the children is string)
+
+| Type  | Required |
+| ----- | -------- |
+| style | No       |
 
 ### `borderColor`
 
@@ -243,3 +313,19 @@ Size of the indicator (default is 'small'). Passing a number to the size prop is
 | Type                          | Required | Default |
 | ----------------------------- | -------- | ------- |
 | enum('small', 'large'),number | No       | small   |
+
+### `underlayColor`
+
+Background color of the button when pressed , only if the button type is **TouchableHighlight**
+
+| Type                                     | Required | Default |
+| ---------------------------------------- | -------- | ------- |
+| [be-color](../../guides/color-reference) | No       | primary |
+
+### `underlayStyle`
+
+override button container style when pressed **this will keep the container styles and push the new style** , only if the button type is **TouchableHighlight**
+
+| Type  | Required |
+| ----- | -------- |
+| style | No       |

@@ -34,9 +34,9 @@ github_user: "abodehq"
 github_repo: "blue-eye"
 
 # Optional
-twitter: vsoch
-linkedin: vsochat
-dockerhub: vanessa
+twitter: snipercoder
+linkedin: snipercoder
+dockerhub: snipercoder
 
 # Should there be feedback buttons at the bottom of pages?
 feedback: true
