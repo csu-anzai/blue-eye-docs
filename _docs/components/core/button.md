@@ -60,6 +60,27 @@ import Button from "be-button";
 
 <img src="https://i.imgur.com/CoGNUtO.jpg" alt="Basic" style="width:150px" />
 
+> With Icon :
+
+```jsx
+import Button from "be-button";
+import Icon, { RegularIcons } from "be-icon";
+---
+<Button
+    icon={<Icon icon={RegularIcons.smileWink} style={ { paddingRight: 10 } } />}
+    color="transparent"
+    containerStyle={ {  width: "100%", height: 100 } }
+    borderColor="primary"
+    borderWidth={1}
+    textColor="primary"
+    onPress={() => console.log("Button Pressed")}
+    >
+    NICE !!
+</Button>
+```
+
+<img src="https://i.imgur.com/iAxBFsU.jpg" alt="Basic" style="width:350px" />
+
 > loading :
 
 ```jsx
@@ -79,6 +100,25 @@ import Button from "be-button";
 ```
 
 <img src="https://i.imgur.com/oBKCU3r.jpg" alt="Basic" style="width:150px" />
+
+> Custom Content :
+
+```jsx
+import Button from "be-button";
+import { Image } from "react-native";
+---
+<Button
+    color="transparent"
+    containerStyle={ { width: 100, height: 100 } }
+    borderColor="#ff9900"
+    borderWidth={1}
+    onPress={() => console.log("Button Pressed")}
+    >
+    <Image style={ { width: 50, height: 50 } } source={ { uri: "https://i.imgur.com/Ksp1jHy.png" } } />
+</Button>
+```
+
+<img src="https://i.imgur.com/CPxohym.jpg" alt="Basic" style="width:150px" />
 
 ### Props
 
@@ -100,8 +140,6 @@ import Button from "be-button";
 
 # Reference
 
-## Props
-
 ### `onPress`
 
 Handler to be called when the user taps the button
@@ -109,6 +147,14 @@ Handler to be called when the user taps the button
 | Type     | Required |
 | -------- | -------- |
 | function | Yes      |
+
+### `color`
+
+Background color of the button
+
+| Type                                     | Required | Default |
+| ---------------------------------------- | -------- | ------- |
+| [be-color](../../guides/color-reference) | Yes      | primary |
 
 ### `hi`
 
