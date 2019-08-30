@@ -9,11 +9,13 @@ A nice button which suits even the most picky developers.
 
 **Usage**
 
-Simple example:
+Basic example:
 
 ```jsx
 <Button>Press here!</Button>
 ```
+
+![Kiku](~/assets/img/logo.png)
 
 **Props**
 

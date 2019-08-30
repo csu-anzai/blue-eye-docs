@@ -1,28 +1,124 @@
 ---
-title: About
-permalink: /about/
+title: Button
+description: How to add interactive quizzes to your site.
 ---
 
 # Button
 
-A nice button which suits even the most picky developers.
+An advance button component that should render nicely on any platform. Supports a great level of customization.
 
 <p align="center">
  <img src="https://i.imgur.com/JjkraTc.png" />
 </p>
 
-**Usage**
+**Examples**
 
-Simple example:
+> Basic :
 
 ```jsx
-<Button>Press here!</Button>
+import Button from "be-button";
+---
+<Button onPress={() => console.log("Button Pressed")}>
+    Learn More
+</Button>
 ```
 
-<div data-snack-id="@abodehq/36e29d" data-snack-platform="web" data-snack-preview="true" data-snack-theme="light" style="overflow:hidden;background:#fafafa;border:1px solid rgba(0,0,0,.08);border-radius:4px;height:505px;width:100%"></div>
-<script async src="https://snack.expo.io/embed.js"></script>
+![Kiku](../../../assets/img/logo.png)
 
-**Props**
+> Outline :
+
+```jsx
+import Button from "be-button";
+---
+<Button outline onPress={() => console.log("Button Pressed")}>
+    Learn More
+</Button>
+```
+
+![Kiku](../../../assets/img/logo.png)
+
+> advance :
+
+```jsx
+import Button from "be-button";
+---
+ <Button
+    color="error"
+    textColor="black"
+    textStyle={ { fontSize: 30 } }
+    containerStyle={ { padding: 60, borderStyle: "dashed" } }
+    borderColor="#666"
+    borderWidth={6}
+    radius={25}
+    opacity={0.5}
+    textTransform="uppercase"
+    onPress={() => console.log("Button Pressed")}
+    >
+    Learn More
+</Button>
+```
+
+![Kiku](../../../assets/img/logo.png)
+
+> loading :
+
+```jsx
+import Button from "be-button";
+---
+<Button
+    loading
+    loadingColor="error"
+    loadingSize="large"
+    color="transparent"
+    containerStyle={ { borderStyle: "dashed" } }
+    borderColor="error"
+    borderWidth={1}
+    radius={40}
+    onPress={() => console.log("Button Pressed")}
+/>
+```
+
+![Kiku](../../../assets/img/logo.png)
+
+### Props
+
+- [`accessibilityLabel`](button.md#accessibilitylabel)
+- [`color`](button.md#color)
+- [`disabled`](button.md#disabled)
+- [`hasTVPreferredFocus`](button.md#hastvpreferredfocus)
+- [`nextFocusDown`](button.md#nextfocusdown)
+- [`nextFocusForward`](button.md#nextfocusForward)
+- [`nextFocusLeft`](button.md#nextfocusleft)
+- [`nextFocusRight`](button.md#nextfocusright)
+- [`nextFocusUp`](button.md#nextfocusleft)
+- [`onPress`](button#onpress)
+- [`testID`](button.md#testid)
+- [`title`](button.md#title)
+- [`touchSoundDisabled`](button.md#touchSoundDisabled)
+
+---
+
+# Reference
+
+## Props
+
+### `onPress`
+
+Handler to be called when the user taps the button
+
+| Type     | Required |
+| -------- | -------- |
+| function | Yes      |
+
+### `hi`
+
+Handler to be called when the user taps the button
+
+| Type     | Required |
+| -------- | -------- |
+| function | Yes      |
+
+---
 
 |             Prop              |     Type     |      Default       |                                             Description                                              |
 | :---------------------------: | :----------: | :----------------: | :--------------------------------------------------------------------------------------------------: |

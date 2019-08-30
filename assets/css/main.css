@@ -559,7 +559,10 @@ hr {
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, .1)
 }
-
+table thead tr
+{
+    background: #ddd;
+}
 small,
 .small {
     font-size: 80%;
@@ -638,15 +641,23 @@ mark,
 
 .figure-caption {
     font-size: 90%;
-    color: #888
+    color: #888;
+    
 }
 
 code {
     font-size: 87.5%;
     color: #952a1e;
-    word-break: break-word
+    word-break: break-word;
+    
 }
-
+h3>code{
+    background-color: #20232a;
+    color:#61dafb !important;
+    border-radius: 3px;
+    color: inherit;
+    padding: 3.2px 6.4px;
+}
 a>code {
     color: inherit
 }
@@ -2090,7 +2101,7 @@ pre code {
 .table-striped tbody tr:nth-of-type(odd),
 .td-box .row.section>table tbody tr:nth-of-type(odd),
 .td-content>table tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, .05)
+    background-color: #fff
 }
 
 .table-hover tbody tr:hover {
@@ -2301,8 +2312,10 @@ pre code {
 
 @media(max-width:991.98px) {
     .table-responsive-lg {
-        display: block;
-        width: 100%;
+        border: 1px solid #b0b0b0;
+        border-collapse: collapse;
+        display: table;
+        width: 80%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar
@@ -2314,8 +2327,10 @@ pre code {
 
 @media(max-width:1199.98px) {
     .table-responsive-xl {
-        display: block;
-        width: 100%;
+        border: 1px solid #b0b0b0;
+        border-collapse: collapse;
+        display: table;
+        width: 80%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar
@@ -2328,8 +2343,10 @@ pre code {
 .table-responsive,
 .td-box .row.section>table,
 .td-content>table {
-    display: block;
-    width: 100%;
+    border: 1px solid #b0b0b0;
+    border-collapse: collapse;
+    display: table;
+    width: 80%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar
@@ -17881,7 +17898,7 @@ a.text-dark:focus {
     margin: 0;
     font-size: 85%;
     word-break: normal;
-    background-color: rgba(0, 0, 0, .05);
+    background-color: #fff ;
     border-radius: .25rem
 }
 
