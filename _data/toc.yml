@@ -13,6 +13,8 @@
     - title: "Core Components"
       url: "docs/components/core/button"
       children:
+        - title: Icon
+          url: "docs/components/core/icon"
         - title: Button
           url: "docs/components/core/button"
         # - title: Quizzes1

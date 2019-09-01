@@ -1,28 +1,28 @@
 ---
-title: Blue Eye Button
+title: Blue Eye Icon
 description:
 ---
 
-# Button
+# Icon
 
 An advance button component that should render nicely on any platform. Supports a great level of customization.
 
 <p align="center">
- <img src="https://i.imgur.com/4V6s8cy.jpg" />
+ <img src="https://i.imgur.com/GYK34HW.png" />
 </p>
 
 ## Installation
 
-Since the library is a JS-based solution, to install the latest version of `be-button` you only need to run:
+to install the latest version of `be-button` you only need to run:
 
 ```bash
-npm install be-button  --save
+npm install be-icon  --save
 ```
 
 or
 
 ```bash
-yarn add be-button be-theme be-icon
+yarn add be-icon be-theme be-icon
 ```
 
 **Examples**
