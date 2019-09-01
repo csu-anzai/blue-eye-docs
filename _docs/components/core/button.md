@@ -1,6 +1,6 @@
 ---
-title: Button
-description: How to add interactive quizzes to your site.
+title: Blue Eye Button
+description:
 ---
 
 # Button
@@ -8,8 +8,22 @@ description: How to add interactive quizzes to your site.
 An advance button component that should render nicely on any platform. Supports a great level of customization.
 
 <p align="center">
- <img src="https://i.imgur.com/JjkraTc.png" />
+ <img src="https://i.imgur.com/4V6s8cy.jpg" />
 </p>
+
+## Installation
+
+Since the library is a JS-based solution, to install the latest version of `be-button` you only need to run:
+
+```bash
+npm install be-button be-theme be-icon --save
+```
+
+or
+
+```bash
+yarn add be-button be-theme be-icon
+```
 
 **Examples**
 
