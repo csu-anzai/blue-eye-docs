@@ -511,7 +511,15 @@ h3,
 
 h4,
 .h4 {
-    font-size: 1.35rem
+    font-size: 1.35rem;
+    background-color:#20232a;
+    border-left: 8px solid #61dafb !important;
+    color:#61dafb !important;
+    height: 50px;
+    padding-top: 12px !important;
+    padding-left:12px;
+    padding-right:12px;
+    display: flex;
 }
 
 h5,
@@ -18398,8 +18406,10 @@ html body .md-typeset .headerlink {
 .td-content>blockquote {
     padding: 0 0 0 1rem;
     margin-bottom: 1rem;
-    color: #888;
-    border-left: 6px solid {{ site.color }}
+    background-color: rgba(255,229,100,.3);
+    border-left: 8px solid #ffe564;
+    padding: 15px 30px 15px 15px;
+    /* border-left: 6px solid {{ site.color }} */
 }
 
 .td-content>ul li,

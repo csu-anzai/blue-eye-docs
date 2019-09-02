@@ -3,9 +3,9 @@ title: Blue Eye Button
 description:
 ---
 
-# Button
+# Radio
 
-An advance button component that should render nicely on any platform. Supports a great level of customization.
+An advance Radio component that should render nicely on any platform. Supports a great level of customization.
 
 <p align="center">
  <img src="https://i.imgur.com/4V6s8cy.jpg" />
@@ -13,21 +13,23 @@ An advance button component that should render nicely on any platform. Supports 
 
 ## Installation
 
-to install the latest version of `be-button` you only need to run:
+to install the latest version of `be-radio` you only need to run:
+
+> this package incluse also : **(Radio, Switch, CheckBox, RadioGroup, CheckboxGroup )**
 
 ```bash
-npm install be-button  --save
+npm install be-radio --save
 ```
 
 or
 
 ```bash
-yarn add be-button
+yarn add be-radio
 ```
 
 **Examples**
 
-#### Basic
+> Basic :
 
 ```jsx
 import Button from "be-button";
@@ -39,7 +41,7 @@ import Button from "be-button";
 
 <img src="https://i.imgur.com/eDTf1Wn.jpg" alt="Basic" style="width:150px" />
 
-#### Outline
+> Outline :
 
 ```jsx
 import Button from "be-button";
@@ -51,7 +53,7 @@ import Button from "be-button";
 
 <img src="https://i.imgur.com/hDVY5m3.jpg" alt="Basic" style="width:150px" />
 
-#### advance
+> advance :
 
 ```jsx
 import Button from "be-button";
@@ -74,7 +76,7 @@ import Button from "be-button";
 
 <img src="https://i.imgur.com/CoGNUtO.jpg" alt="Basic" style="width:150px" />
 
-#### With Icon
+> With Icon :
 
 ```jsx
 import Button from "be-button";
@@ -95,7 +97,7 @@ import Icon, { RegularIcons } from "be-icon";
 
 <img src="https://i.imgur.com/iAxBFsU.jpg" alt="Basic" style="width:350px" />
 
-#### loading
+> loading :
 
 ```jsx
 import Button from "be-button";
@@ -115,7 +117,7 @@ import Button from "be-button";
 
 <img src="https://i.imgur.com/oBKCU3r.jpg" alt="Basic" style="width:150px" />
 
-#### Custom Content
+> Custom Content :
 
 ```jsx
 import Button from "be-button";
@@ -134,7 +136,7 @@ import { Image } from "react-native";
 
 <img src="https://i.imgur.com/CPxohym.jpg" alt="Basic" style="width:150px" />
 
-#### TouchableHighlight
+> TouchableHighlight :
 
 ```jsx
 import Button from "be-button";

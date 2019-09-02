@@ -5,7 +5,7 @@ description:
 
 # Icon
 
-A great component that allow you to create your custom icons or even fontawsome icons using react native text component to render icons based on font file ..
+A great component that give you the ability you to create your own custom icons or fontawsome icons .
 
 # Benefits
 
