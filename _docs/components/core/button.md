@@ -22,7 +22,7 @@ npm install be-button  --save
 or
 
 ```bash
-yarn add be-button be-theme be-icon
+yarn add be-button
 ```
 
 **Examples**
@@ -222,7 +222,7 @@ Background color of the button
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | No       | primary |
+| [be-color](../../guides/color-reference) | No       | theme   |
 
 ### `textColor`
 
@@ -254,7 +254,7 @@ border color of the button , will active if the borderWidth prop great than 0 or
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | No       | primary |
+| [be-color](../../guides/color-reference) | No       | theme   |
 
 ### `borderWidth`
 
@@ -318,7 +318,7 @@ set Loading indicator color , will active if loading prop set to true
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | No       | primary |
+| [be-color](../../guides/color-reference) | No       | theme   |
 
 ### `loadingSize`
 
@@ -334,7 +334,7 @@ Background color of the button when pressed , only if the button type is **Touch
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
-| [be-color](../../guides/color-reference) | No       | primary |
+| [be-color](../../guides/color-reference) | No       | theme   |
 
 ### `underlayStyle`
 
