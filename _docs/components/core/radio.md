@@ -1,5 +1,5 @@
 ---
-title: Blue Eye Button
+title: Blue Eye Radio
 description:
 ---
 
@@ -29,31 +29,63 @@ yarn add be-radio
 
 **Examples**
 
-> Basic :
+#### Basic
 
 ```jsx
-import Button from "be-button";
+import { Radio } from "be-radio";
 ---
-<Button onPress={() => console.log("Button Pressed")}>
-    Learn More
-</Button>
+<Radio
+  id="1"
+  value="5"
+  onChange={event => {
+    console.log(event);
+  }}>
+  Nice Radio :)
+</Radio>
 ```
 
-<img src="https://i.imgur.com/eDTf1Wn.jpg" alt="Basic" style="width:150px" />
+<img src="https://i.imgur.com/X4mMpT4.jpg" alt="Basic" style="width:250px" />
 
-> Outline :
+#### Advance
 
 ```jsx
-import Button from "be-button";
+import { Radio } from "be-radio";
 ---
-<Button outline onPress={() => console.log("Button Pressed")}>
-    Learn More
-</Button>
+<Radio
+  id="1"
+  value="5"
+  onChange={event => {
+    console.log(event);
+  }}
+  hideIconBorder={true}
+  size={60}
+  iconActiveColor="success"
+  textActiveColor="#00ff00"
+  textStyle={ { fontSize: 18 } }>
+  active Radio :)
+</Radio>
+<Radio
+  id="2"
+  value="10"
+  onChange={event => {
+    console.log(event);
+  }}
+  checked={false}
+  hideInActiveIcon={false}
+  hideLable={false}
+  size={30}
+  iconInActiveColor="red"
+  textInActiveColor="theme"
+  textStyle={ { fontSize: 14 } }
+  iconStyle={ { borderRadius: 0 } }
+  style={ { borderWidth: 1, borderColor: "#ff9900", padding: 5 } }>
+  inactive Radio :(
+</Radio>
 ```
 
-<img src="https://i.imgur.com/hDVY5m3.jpg" alt="Basic" style="width:150px" />
+<img src="https://i.imgur.com/Ris5hpn.jpg" alt="Basic" style="width:250px" />
 
-> advance :
+#### advance
 
 ```jsx
 import Button from "be-button";
@@ -76,7 +108,7 @@ import Button from "be-button";
 
 <img src="https://i.imgur.com/CoGNUtO.jpg" alt="Basic" style="width:150px" />
 
-> With Icon :
+#### With Icon
 
 ```jsx
 import Button from "be-button";
@@ -97,7 +129,7 @@ import Icon, { RegularIcons } from "be-icon";
 
 <img src="https://i.imgur.com/iAxBFsU.jpg" alt="Basic" style="width:350px" />
 
-> loading :
+#### loading
 
 ```jsx
 import Button from "be-button";
@@ -117,7 +149,7 @@ import Button from "be-button";
 
 <img src="https://i.imgur.com/oBKCU3r.jpg" alt="Basic" style="width:150px" />
 
-> Custom Content :
+#### Custom Content
 
 ```jsx
 import Button from "be-button";
@@ -136,7 +168,7 @@ import { Image } from "react-native";
 
 <img src="https://i.imgur.com/CPxohym.jpg" alt="Basic" style="width:150px" />
 
-> TouchableHighlight :
+#### TouchableHighlight
 
 ```jsx
 import Button from "be-button";

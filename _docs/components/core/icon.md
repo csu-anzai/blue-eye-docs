@@ -9,13 +9,13 @@ A great component that give you the ability you to create your own custom icons 
 
 # Benefits
 
-> Create you own custome icons which you can control the size of the font icon file.
+- Create you own custome icons which you can control the size of the font icon file.
 
-> No bloatware, one package with one iconset, nothing more nothing less
+- No bloatware, one package with one iconset, nothing more nothing less
 
-> Full set of FontAwesome Icons properly updated
+- Full set of FontAwesome Icons properly updated
 
-> Insanely fast with minimal memory footprint
+- Insanely fast with minimal memory footprint
 
 <p align="center">
  <img src="https://i.imgur.com/GYK34HW.png" />
@@ -90,7 +90,7 @@ export default BeIcons = {
 
 **Examples**
 
-> Font Awesome Icons :
+#### Font Awesome Icons :
 
 ```jsx
 import Icon, { SolidIcons, RegularIcons, BrandIcons } from "be-icon";
@@ -106,7 +106,7 @@ import Icon, { SolidIcons, RegularIcons, BrandIcons } from "be-icon";
 
 <img src="https://i.imgur.com/eX6sk3B.jpg" alt="Basic" style="width:150px" />
 
-> Custom Font icons :
+#### Custom Font icons :
 
 ```jsx
 import Icon from "be-icon";
