@@ -88,22 +88,22 @@ import { CheckBox } from "be-radio";
 import { CheckBox } from "be-radio";
 import  { SolidIcons } from "be-icon";
 ---
-<CheckBox
+ <CheckBox
   id="1"
   value="5"
   onChange={event => {
     console.log(event);
   }}
-  iconActive={SolidIcons.box}
-  iconInActive={SolidIcons.boxOpen}
+  iconActive={SolidIcons.checkDouble}
+  iconInActive={SolidIcons.checkDouble}
   hideInActiveIcon={false}
-  iconStyle={ { width: 50, height: 50, borderRadius: 25 } }
+  checked
 >
   Box
 </CheckBox>
 ```
 
-<img src="https://i.imgur.com/czhCDBw.jpg" alt="Basic" style="width:150px" />
+<img src="https://i.imgur.com/nk5xPPY.jpg" alt="Basic" style="width:150px" />
 
 ### Props
 
