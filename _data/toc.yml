@@ -32,6 +32,8 @@
       children:
         - title: Color Reference
           url: "docs/guides/color-reference"
+        - title: Icons List
+          url: "docs/guides/fontawesomelist"
     # - title: "About"
     #   url: "about"
     # - title: "News"

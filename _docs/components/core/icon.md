@@ -7,6 +7,8 @@ description:
 
 A great component that give you the ability you to create your own custom icons or fontawsome icons .
 
+> We give you a tool to generate and search for fontawsome icons directly. [Icons List](../../guides/fontawesomelist)
+
 # Benefits
 
 - Create you own custome icons which you can control the size of the font icon file.
