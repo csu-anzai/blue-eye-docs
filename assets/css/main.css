@@ -18162,13 +18162,15 @@ html body .md-typeset .headerlink {
 .td-sidebar__toggle {
     line-height: 1;
     color: #222;
+   
     margin: 1rem
 }
 
 .td-sidebar__search {
     padding: 1rem 15px;
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
+    background-color: #f8f9fa;
 }
 
 .td-sidebar__inner {
