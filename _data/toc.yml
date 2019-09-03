@@ -19,6 +19,8 @@
           url: "docs/components/core/button"
         - title: Radio
           url: "docs/components/core/radio"
+        - title: Radio Group
+          url: "docs/components/core/radiogroup"
         - title: CheckBox
           url: "docs/components/core/checkbox"
         # - title: Quizzes1
