@@ -1,11 +1,11 @@
 ---
-title: Blue Eye Radio
+title: Blue Eye checkBox
 description:
 ---
 
-# Radio
+# Checkbox
 
-An advance Radio component that should render nicely on any platform. Supports a great level of customization.
+An advance CheckBox component that should render nicely on any platform. Supports a great level of customization.
 
 ## Installation
 
@@ -28,26 +28,26 @@ yarn add be-radio
 #### Basic
 
 ```jsx
-import { Radio } from "be-radio";
+import { CheckBox } from "be-radio";
 ---
-<Radio
+<CheckBox
   id="1"
   value="5"
   onChange={event => {
     console.log(event);
   }}>
-  Nice Radio :)
-</Radio>
+  Nice CheckBox :)
+</CheckBox>
 ```
 
-<img src="https://i.imgur.com/X4mMpT4.jpg" alt="Basic" style="width:250px" />
+<img src="https://i.imgur.com/CsdyH5B.jpg" alt="Basic" style="width:250px" />
 
 #### Advance
 
 ```jsx
-import { Radio } from "be-radio";
+import { CheckBox } from "be-radio";
 ---
-<Radio
+<CheckBox
   id="1"
   value="5"
   onChange={event => {
@@ -59,9 +59,9 @@ import { Radio } from "be-radio";
   iconActiveColor="success"
   textActiveColor="#00ff00"
   textStyle={ { fontSize: 18 } }>
-  active Radio :)
-</Radio>
-<Radio
+  active  :)
+</CheckBox>
+<CheckBox
   id="2"
   value="10"
   onChange={event => {
@@ -76,19 +76,19 @@ import { Radio } from "be-radio";
   textStyle={ { fontSize: 14 } }
   iconStyle={ { borderRadius: 0 } }
   style={ { borderWidth: 1, borderColor: "#ff9900", padding: 5 } }>
-  inactive Radio :(
-</Radio>
+  inactive  :(
+</CheckBox>
 ```
 
-<img src="https://i.imgur.com/Ris5hpn.jpg" alt="Basic" style="width:250px" />
+<img src="https://i.imgur.com/FkMZffs.jpg" alt="Basic" style="width:250px" />
 
 #### Custom Icons
 
 ```jsx
-import { Radio } from "be-radio";
+import { CheckBox } from "be-radio";
 import  { SolidIcons } from "be-icon";
 ---
-<Radio
+<CheckBox
   id="1"
   value="5"
   onChange={event => {
@@ -100,34 +100,34 @@ import  { SolidIcons } from "be-icon";
   iconStyle={ { width: 50, height: 50, borderRadius: 25 } }
 >
   Box
-</Radio>
+</CheckBox>
 ```
 
 <img src="https://i.imgur.com/czhCDBw.jpg" alt="Basic" style="width:150px" />
 
 ### Props
 
-- [`id`](radio#id)
-- [`value`](radio#value)
-- [`onChange`](radio#onchange)
-- [`disabled`](radio#disabled)
-- [`checked`](radio#checked)
-- [`flexDirection`](radio#flexdirection)
-- [`size`](radio#size)
-- [`hideLable`](radio#hidelable)
-- [`textActiveColor`](radio#textactivecolor)
-- [`textInActiveColor`](radio#textinactivecolor)
-- [`textDisabledColor`](radio#textdisabledcolor)
-- [`iconActive`](radio#iconactive)
-- [`iconInActive`](radio#iconinactive)
-- [`iconActiveColor`](radio#iconactivecolor)
-- [`iconInActiveColor`](radio#iconinactivecolor)
-- [`icondisabledcolor`](radio#icondisabledcolor)
-- [`hideInActiveIcon`](radio#hideinactiveicon)
-- [`hideIconBorder`](radio#hideiconborder)
-- [`style`](radio#style)
-- [`textStyle`](radio#textstyle)
-- [`iconStyle`](radio#iconstyle)
+- [`id`](checkbox#id)
+- [`value`](checkbox#value)
+- [`onChange`](checkbox#onchange)
+- [`disabled`](checkbox#disabled)
+- [`checked`](checkbox#checked)
+- [`flexDirection`](checkbox#flexdirection)
+- [`size`](checkbox#size)
+- [`hideLable`](checkbox#hidelable)
+- [`textActiveColor`](checkbox#textactivecolor)
+- [`textInActiveColor`](checkbox#textinactivecolor)
+- [`textDisabledColor`](checkbox#textdisabledcolor)
+- [`iconActive`](checkbox#iconactive)
+- [`iconInActive`](checkbox#iconinactive)
+- [`iconActiveColor`](checkbox#iconactivecolor)
+- [`iconInActiveColor`](checkbox#iconinactivecolor)
+- [`icondisabledcolor`](checkbox#icondisabledcolor)
+- [`hideInActiveIcon`](checkbox#hideinactiveicon)
+- [`hideIconBorder`](checkbox#hideiconborder)
+- [`style`](checkbox#style)
+- [`textStyle`](checkbox#textstyle)
+- [`iconStyle`](checkbox#iconstyle)
 
 ---
 
@@ -135,7 +135,7 @@ import  { SolidIcons } from "be-icon";
 
 ### `id`
 
-the id of your component, should be unique when u use radioGroup.
+the id of your component, should be unique when u use checkBoxGroup.
 
 | Type   | Required |
 | ------ | -------- |
@@ -143,7 +143,7 @@ the id of your component, should be unique when u use radioGroup.
 
 ### `value`
 
-the value property do not appear in the user interface.The value property only has meaning when you click on the component and you want to receive the value for which radio has been selected.
+the value property do not appear in the user interface.The value property only has meaning when you click on the component and you want to receive the value for which checkBox has been selected.
 
 | Type   | Required |
 | ------ | -------- |
@@ -183,7 +183,7 @@ the default state if it checked or not .
 
 ### `flexDirection`
 
-flexDirection controls which directions children of a container go.(radio icon, and label) row goes left to right, column goes top to bottom
+flexDirection controls which directions children of a container go.(checkBox icon, and label) row goes left to right, column goes top to bottom
 
 | Type                                             | Required | Default |
 | ------------------------------------------------ | -------- | ------- |
@@ -199,7 +199,7 @@ set the size of the icon .
 
 ### `hideLable`
 
-Hide Radio label when it set to true . or you simply not pass text children to the radio component.
+Hide checkBox label when it set to true . or you simply not pass text children to the checkBox component.
 
 | Type | Required | Default |
 | ---- | -------- | ------- |
@@ -231,7 +231,7 @@ the text color of the component label when its disabled .
 
 ### `iconActive`
 
-if you want to change the default icon of the radio button when its active, you need just to pass the new icon name using this prop.
+if you want to change the default icon of the checkBox button when its active, you need just to pass the new icon name using this prop.
 
 | Type                                                                      | Required | Default              |
 | ------------------------------------------------------------------------- | -------- | -------------------- |
@@ -239,7 +239,7 @@ if you want to change the default icon of the radio button when its active, you 
 
 ### `iconInActive`
 
-if you want to change the default icon of the radio button when its inActive, you need just to pass the new icon name using this prop.
+if you want to change the default icon of the checkBox button when its inActive, you need just to pass the new icon name using this prop.
 
 | Type                                                                      | Required | Default              |
 | ------------------------------------------------------------------------- | -------- | -------------------- |
@@ -247,7 +247,7 @@ if you want to change the default icon of the radio button when its inActive, yo
 
 ### `iconActiveColor`
 
-the color of the radio icon and its border when its checked .
+the color of the checkBox icon and its border when its checked .
 
 | Type                                     | Required | Default |
 | ---------------------------------------- | -------- | ------- |
@@ -255,7 +255,7 @@ the color of the radio icon and its border when its checked .
 
 ### `iconInActiveColor`
 
-the color of the radio icon and its border when its unchecked .
+the color of the checkBox icon and its border when its unchecked .
 
 | Type                                     | Required | Default              |
 | ---------------------------------------- | -------- | -------------------- |
@@ -263,7 +263,7 @@ the color of the radio icon and its border when its unchecked .
 
 ### `iconDisabledColor`
 
-the color of the radio icon and its border when its disabled .
+the color of the checkBox icon and its border when its disabled .
 
 | Type                                     | Required | Default              |
 | ---------------------------------------- | -------- | -------------------- |
@@ -271,7 +271,7 @@ the color of the radio icon and its border when its disabled .
 
 ### `hideInActiveIcon`
 
-by default when radio button is uncheced we only show the border and hide the icon by default.if you want to keep the icon when the radio is unchecked you need to set the prop to false.
+by default when checkBox button is uncheced we only show the border and hide the icon by default.if you want to keep the icon when the checkBox is unchecked you need to set the prop to false.
 
 | Type | Required | Default |
 | ---- | -------- | ------- |
@@ -279,7 +279,7 @@ by default when radio button is uncheced we only show the border and hide the ic
 
 ### `hideIconBorder`
 
-by default we show the radio icon border , this is very important in the case hideInActiveIcon set to true.if you dont like to show the icon border just set this prop to true.
+by default we show the checkBox icon border , this is very important in the case hideInActiveIcon set to true.if you dont like to show the icon border just set this prop to true.
 
 | Type | Required | Default |
 | ---- | -------- | ------- |
@@ -287,7 +287,7 @@ by default we show the radio icon border , this is very important in the case hi
 
 ### `style`
 
-override radio button (label + icon) container style for example if you want to change width,height,padding,....
+override checkBox button (label + icon) container style for example if you want to change width,height,padding,....
 
 | Type  | Required |
 | ----- | -------- |
@@ -295,7 +295,7 @@ override radio button (label + icon) container style for example if you want to 
 
 ### `textStyle`
 
-override radio button label style for example if you want to change fontSize,....
+override checkBox button label style for example if you want to change fontSize,....
 
 | Type  | Required |
 | ----- | -------- |
@@ -303,7 +303,7 @@ override radio button label style for example if you want to change fontSize,...
 
 ### `iconStyle`
 
-override radio button icon style for example if you want to change borderRadius,....
+override checkBox button icon style for example if you want to change borderRadius,....
 
 | Type  | Required |
 | ----- | -------- |
