@@ -23,6 +23,8 @@
           url: "docs/components/core/radiogroup"
         - title: CheckBox
           url: "docs/components/core/checkbox"
+        - title: CheckBox Group
+          url: "docs/components/core/checkboxgroup"
         # - title: Quizzes1
         # url: "docs/extras/example-quiz"
     - title: "GUIDES"

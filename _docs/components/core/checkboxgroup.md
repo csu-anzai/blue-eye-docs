@@ -1,13 +1,13 @@
 ---
-title: Blue Eye Radio Group
+title: Blue Eye CheckBox Group
 description:
 ---
 
-# RadioGroup
+# CheckboxGroup
 
-An advance component used to create a multiple-exclusion scope for a set of radio buttons. Checking one radio button that belongs to a radio group unchecks any previously checked radio button within the same group.
+An advance component used to create a multiple-exclusion scope for a set of CheckBox buttons.
 
-> for great customization you can pass your custom radio button template component as a child to the radiobutton Group component ;)
+> for great customization you can pass your custom CheckBox button template component as a child to the CheckBox Group component ;)
 
 ## Installation
 
@@ -30,9 +30,9 @@ yarn add be-radio
 #### Basic
 
 ```jsx
-import { Radio, RadioGroup } from "be-radio";
+import { CheckBox, CheckboxGroup } from "be-radio";
 ---
-<RadioGroup
+<CheckboxGroup
   onChange={event => {
     console.log(event);
   }}
@@ -54,7 +54,7 @@ import { Radio, RadioGroup } from "be-radio";
     {
       id: "3",
       value: "c#",
-      checked: false,
+      checked: true,
       disabled: false
     },
     {
@@ -66,23 +66,23 @@ import { Radio, RadioGroup } from "be-radio";
     {
       id: "5",
       value: "java",
-      checked: false,
+      checked: true,
       disabled: false
     }
   ]}
 >
-  <Radio style={ { padding: 10 } } />
-</RadioGroup>
+  <CheckBox style={ { padding: 10 } } />
+</CheckboxGroup>
 ```
 
-<img src="https://i.imgur.com/MbxEO39.jpg" alt="Basic" style="width:350px" />
+<img src="https://i.imgur.com/IycnPvz.jpg" alt="Basic" style="width:350px" />
 
 ### Props
 
-- [`options`](radiogroup#options)
-- [`onChange`](radiogroup#onchange)
-- [`flexDirection`](radiogroup#flexdirection)
-- [`style`](radiogroup#style)
+- [`options`](checkboxgroup#options)
+- [`onChange`](checkboxgroup#onchange)
+- [`flexDirection`](checkboxgroup#flexdirection)
+- [`style`](checkboxgroup#style)
 
 ---
 
@@ -161,7 +161,7 @@ flexDirection controls which directions children of a container go.(radio button
 
 ### `style`
 
-override radioGroup container style for example if you want to change flexWrap if you have many radios ....
+override checkboxgroup container style for example if you want to change flexWrap if you have many radios ....
 
 | Type  | Required |
 | ----- | -------- |
