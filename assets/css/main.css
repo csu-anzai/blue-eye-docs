@@ -18220,12 +18220,10 @@ html body .md-typeset .headerlink {
         position: -webkit-sticky;
         position: sticky;
         top: 4rem;
-        /* - 10rem */
-        height: -webkit-calc(100vh );
-        height: calc(100vh );
+        height: -webkit-calc(100vh - 10rem);
+        height: calc(100vh - 10rem);
         overflow-y: auto;
-      
-        background-color:#f8f9fa
+        background-color: rgba(48, 99, 142, .03);
     }
 }
 
@@ -18249,7 +18247,7 @@ html body .md-typeset .headerlink {
 }
 
 .td-toc #TableOfContents a {
-    color:#222;
+    color: #888
 }
 
 .td-toc #TableOfContents a:hover {
